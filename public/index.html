@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <div role="combobox" aria-expanded="false" class="ui fluid search selection dropdown">
+  <input
+    type="text"
+    aria-autocomplete="list"
+    autocomplete="off"
+    class="search"
+    tabindex="0"
+    value=""
+  />
+  <div class="default text" role="alert" aria-live="polite" aria-atomic="true">Select Country</div>
+  <i aria-hidden="true" class="dropdown icon"></i>
+  <div role="listbox" class="menu transition">
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="true"
+      class="selected item"
+    >
+      <i class="af flag"></i>
+      <span class="text">Afghanistan</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ax flag"></i>
+      <span class="text">Aland Islands</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="al flag"></i>
+      <span class="text">Albania</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="dz flag"></i>
+      <span class="text">Algeria</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="as flag"></i>
+      <span class="text">American Samoa</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ad flag"></i>
+      <span class="text">Andorra</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ao flag"></i>
+      <span class="text">Angola</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ai flag"></i>
+      <span class="text">Anguilla</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ag flag"></i>
+      <span class="text">Antigua</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="ar flag"></i>
+      <span class="text">Argentina</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="am flag"></i>
+      <span class="text">Armenia</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="aw flag"></i>
+      <span class="text">Aruba</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="au flag"></i>
+      <span class="text">Australia</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="at flag"></i>
+      <span class="text">Austria</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="az flag"></i>
+      <span class="text">Azerbaijan</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bs flag"></i>
+      <span class="text">Bahamas</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bh flag"></i>
+      <span class="text">Bahrain</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bd flag"></i>
+      <span class="text">Bangladesh</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bb flag"></i>
+      <span class="text">Barbados</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="by flag"></i>
+      <span class="text">Belarus</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="be flag"></i>
+      <span class="text">Belgium</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bz flag"></i>
+      <span class="text">Belize</span>
+    </div>
+    <div
+      style="pointer-events:all"
+      role="option"
+      aria-checked="false"
+      aria-selected="false"
+      class="item"
+    >
+      <i class="bj flag"></i>
+      <span class="text">Benin</span>
+    </div>
+  </div>
+</div>
+ -->
+  </body>
+</html>
